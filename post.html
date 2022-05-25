@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            text-align:right;
+            margin-top: 30px;
+        }
+        div{
+            text-align:center;
+            margin-top: 30px;
+        }
+        table {
+         border-collapse: collapse;
+         width: 100%;
+      }
+      th, td { padding: 10px; }
+      th,tr:nth-child(2n) { background-color: gainsboro; }
+    </style>
+</head>
+<body>
+        <hr style="border:solid 30px green"> </hr>
+    <h1>
+        게시판
+    </h1>
+        <hr style="border:solid 1px black"> </hr>
+    <h3 style="margin-top: 0px;margin-bottom: 0px;width: 300px;">
+        ▷총 3개의 게시물이 있습니다.
+    </h3>
+    <div class="div">
+        <select>
+            <option value="제목">제목</option>
+            <option value="작성자">작성자</option>
+            <option value="일시">일시</option>
+        </select>
+        <input type="text">
+        <input type="button" name="검색" value="검색">
+    </div>
+    <br>
+    <br>
+    <table>
+        <thead align="center">
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>일시</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1</td>
+                <td>게시글1입니다.</td>
+                <td>김준석</td>
+                <td>2022-05-16</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>게시글2입니다.</td>
+                <td>김준석</td>
+                <td>2022-05-16</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>게시글3입니다.</td>
+                <td>김준석</td>
+                <td>2022-05-16</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+            <br>
+        <div>
+            <input type="button" name="이전" value="◀">이전
+            1
+            다음<input type="button" name="다음" value="▶">
+        </div>
+        <div class="div"> 
+            <input type="button" name="목록" value="목록">
+            <input type="button" name="글쓰기" value="글쓰기">
+        </div>
+</body>
+</html>

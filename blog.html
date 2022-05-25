@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+        <ol>
+            <h1>블로그 게시글 업로드</h1>
+            <li>이름:</li>
+            <input type="text" name="이름" >
+            <li>이메일:</li>
+            <input type="text"name="이메일" >
+            <li>게시글내용</li>
+            <input type="text" style="width:300px;height:50px;font-size:10px;" name="내용">
+            <br>
+            <input type="submit" value="전송">
+        </ol>
+    </form>
+        <br>
+        <ol>
+            <h1>간편 회원 가입</h1>
+            <br>
+            <form action="/examples/media/action_target.php" method="get">
+                <fieldset>
+                <legend style="width:300px;height:50px;">입력정보 </legend>
+                    1.이름 : <input type="text" name="이름" ><br>
+                    2.이메일 : <input type="email"  name="이메일" placeholder=abcde1234@naver.com ><br>
+                    3.휴대폰번호 : <input type="tell" name="휴대폰번호" ><br>
+                </fieldset>
+            </form>
+            <li>인증코드:<input type="text" name="인증코드번호" value="인증번호">
+                <input type="submit"  name="인증번호" value="전송"> </li>
+        </ol>
+        <br>
+        <o1>
+            <h1>기본회원가입</h1>
+        </o1>
+        <tabel>
+        <br>
+        <tr>
+            <td>아이디:</td>
+            <td><input type="text" name="id"> <br></td>
+        </tr>
+        <tr>
+            <td>비밀번호:</td>
+            <td><input type="password"> <br></td>
+        </tr>
+        <tr>
+             <td>비밀번호확인:</td>
+            <td><input type="password"> <br></td>
+        </tr>
+        <tr>
+            <td rowspan:2>이름:</td>
+            <td><input type="text"> <br></td>
+        
+            <td>남성<input type="radio" name="gender" value="man">여성<input type="radio" name="gender" value="woman">입력안함<input type="radio" name="geder"> </td>
+        </tr>
+        <br>
+        <tr>
+        <td>전화번호:</td>
+        <td><select>
+                <option value="02">02</option>
+                <option value="031">031</option>
+                <option value="033">033</option>
+                <option value="041">041</option>
+                <option value="042">042</option>
+                <option value="043">043</option>
+                <option value="044">044</option>
+                <option value="051">051</option>
+                <option value="053">053</option>
+                <option value="054">054</option>
+                <option value="055">055</option>
+                <option value="061">061</option>
+                <option value="063">063</option>
+                <option value="064">064</option>
+        </select>
+        <td><input type="tell" name="전화번호"></td><br>
+        </tr>
+        <td>이메일:</td>
+        <td><input type="email" name="이메일"></td>
+        <td><select>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="gmail.com">gmail.com</option>
+        </select></td>
+        <article>
+            자기소개:
+            <input type="text" style="width:500px;height:150px;font-size:30px;"/>
+        </article>
+        
+        </body>
+        </html>
