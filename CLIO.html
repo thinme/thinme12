@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            font-size: 0.75em;
+        }
         article.article-4 h1{
             text-align: center;
             font-size: 44px;
@@ -29,7 +32,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, 20%);
             grid-auto-rows: 240px;
-            place-content: center center;
+            place-content: center;
             margin: 0 auto;
         }
         article.article-4 .col-1{
@@ -63,6 +66,12 @@
         section a{color: #fff;
             text-decoration: none;  
         }
+        section>.flex>.insta{
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1;
+            
+        }
         section .grid-container{
             display: grid;
             grid-template-areas: 
@@ -72,7 +81,8 @@
             justify-items: start;
             align-items: center;
             color: #9f9f9f;
-            row-gap: 5px;
+            row-gap: 15px;
+            
         }
         section .flex{
             display: flex;
@@ -82,12 +92,15 @@
         section .flex>.grid-container>.title{
             grid-area: title;
             color: #fff;
-            font: 1.17em;
+            font-size: 1.17em;
+            font-weight: bold;
         }
         section .flex>.grid-container>.text{
             grid-area: text;
-            font:0.75em;
             
+        }
+        section>.flex>.grid-container>div:nth-child(n+3){
+            margin-right: 10px;
         }
         section .flex>.grid-container>.message{
             grid-area: message;
@@ -138,24 +151,28 @@
         </div>
     </article>
 
-    <section class="section">
+    <section>
         <div class="customer flex">
-              <div>INSTARGRAM
+            <div class="insta">INSTARGRAM
                 <br>
-                <a  href="https://www.instagram.com/accounts/login/?next=/clean_clio/" target="_blank" style="  text-decoration: none;">
+                <a style="font-size: 0.7em;" href="https://www.instagram.com/accounts/login/?next=/clean_clio/" target="_blank">
                   FOLLOW > <br> @clean_clio 
                 </a>
             </div>
-            </div>
             <div class="grid-container">
-              <div class="title">CUSTOMER CENTER</div>
-              <div class="text">AM 09:00~PM 05:00 / SAT,SUN,HOLIDAY OFF</div>
-                <div class="message"> <a href="http://drclio.co.kr/board/urgency/urgency.html">
-                                    <img src="./img/message.png"></a></div>              
-                <div class="online"><a href="http://drclio.co.kr/board/urgency/urgency.html">
-                                    온라인문의</a></div>         
+                <div class="title">CUSTOMER CENTER</div>
+                <div class="text">AM 09:00~PM 05:00 / SAT,SUN,HOLIDAY OFF</div>
+                <div class="message">
+                    <a href="http://drclio.co.kr/board/urgency/urgency.html">
+                        <img src="./img/message.png">
+                    </a>
+                </div>              
+                <div class="online">
+                    <a href="http://drclio.co.kr/board/urgency/urgency.html">온라인문의</a>
+                </div>         
                 <div class="telling"><img src="./img/tell.png"></div>
                 <div class="number"> 080-706-3810</div>                           
             </div>
+        </div>
      </section>     
 </html>
