@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 전역변수와 지역변수</title>
+</head>
+<body>
+    <script>
+        function getGrade() {
+            var kor=95;
+        }
+        var kor=100;
+        getGrade();
+        document.write("국어 점수 :" + kor + "<br>" );
+    </script>
+    <script>
+        function getGrade(){
+            kor=95;
+        }
+        var kor=100;
+        getGrade();
+        document.write("국어 점수 :" + kor + "<br>");
+    </script>
+    <script>
+        function getGrade(){
+            var kor=95;
+        }
+        getGrade();
+        document.write("지역 변수 값은 함수 외부에서 사용할 수 없습니다.<br>");
+        document.write("국어 점수 :" + kor + "<br>");
+    </script>
+    <script>
+        function getGrade(){
+            var kor=95;
+            return kor;
+        }
+        getKor=getGrade();
+        document.write("국어 점수 :" + getkor + "<br>");
+    </script>
+
+
+</body>
+</html>
