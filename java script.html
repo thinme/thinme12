@@ -135,6 +135,73 @@
         }
         document.write("오늘은 <b>" + day + "</b>입니다. <p/>")
     </script>
+    <script>
+        var x,y;
+        for(x=2; x<=5; x++){
+            document.write("<b> ---["+ x + "단]--- </b>" + "<br>");
+            for(y=1; y<=9; y++){
+                document.write(x+"*"+y+"=" + (x*y)+"<br>");
+            }
+        }
+    </script>
+    <script>
+        var x=1;
+        var sum=0;
+        while(x<=100) {
+            sum+=x;
+            x++;
+        }
+        document.write("1~100까지 합 : <b>" + sum + "</b>" )
+    </script>
+    <script>
+        var x=1;
+        var sum=0;
+        while(1){
+            sum+=x;
+            x++
+            if(x==10001){
+                break;
+            }
+        }
+        document.write("1~10000까지 합 : <b>" + sum + "</b>")
+    </script>
+    <script>
+        var x=0;
+        var sum=0;
+        while(1){
+            x+=3;
+            if(x>100){
+            break;
+            }
+            sum+=x;
+            document.write(x +" ");
+        }
+        document.write("<p/>");
+        document.write("1~100까지 수 중 3의 배수의 합은 : <b>" + sum + "</b>");
+    </script>
+    <script>
+        var x=0;
+        var sum=0;
+        for(x=1; x<=100; x++){
+            if(x%3 !=0){
+                continue;
+            }
+            sum+=x;
+            document.write(x + " ");
+        }
+        document.write("<p/>");
+        document.write("1~100 까지 수 중 3의 배수 합은 : <b>" + sum + "</b>")
+    </script>
+    <script>
+        var city=["서울", "부산", "대전"];
+        var joindata1=city.join();
+        var joindata2=city.join('-');
+        var joindata3=city.join('그리고');
+        document.write("조인 결과1 :" + joindata1 +"<p/>");
+        document.write("조인 결과2 :" + joindata2 + "<p/>");
+        document.write("조인 결과3 :" + joindata3 +"<p/>");
+    </script>
+
     
 </body>
 </html>
