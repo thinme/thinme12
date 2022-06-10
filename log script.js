@@ -11,12 +11,18 @@ id=prompt('아이디 입력');
 else{
     location.href="20_error.html"
 }
-function solution(string) {
-    var answer = '';
-    let check=0;
-    for(let i=0; i<string.length; i++){
-        check=(string[i]==="")?0:check+1;
-        answer+=(check%2 ===0)?string[i].toLowerCase():string[i].toUpperCase();
+function solution(array) {
+    let swap;
+    for(let i=0; i<array.length; i++){
+        for(let j=0; j<=array.length-i; j++){
+            if(array[j]>array[j+1]){
+                swap=array[j];
+                array[j]=array[j+1];
+                array[j+1]=swap;                  //버블정렬
+            }
+        }
+
     }
-    return answer
-}
+    }
+    console.log(solution(3,2,1,4,5))
+ 
