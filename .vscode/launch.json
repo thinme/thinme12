@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch ScannerEx",
+            "request": "launch",
+            "mainClass": "ScannerEx",
+            "projectName": "박혁진_78782100"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "박혁진_78782100"
+        },
+        {
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Open test.html",
