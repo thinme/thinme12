@@ -1,17 +1,16 @@
 import java.util.*;
 
 class Hash {
+    private boolean add;
     public static void main(String[] args){
-
-     
-        
-        
+        int[] number = {1,2,3,4,5,6};   
+        solution(number);
     }
-    public TreeSet <Integer> solution(int[] numbers){
+    public static TreeSet <Integer> solution(int[] numbers){
         TreeSet<Integer> arr= new TreeSet<Integer>();
         for(int i=0; i<numbers.length; i++){
-            for(int j=0; j<numbers.length; j++){
-                arr.add(numbers[i]+numbers[j]);
+            for(int j=i+1; j<numbers.length; j++){
+                 arr.add(numbers[i]+numbers[j]);
 
                 
             }
