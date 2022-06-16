@@ -1,7 +1,6 @@
 import java.util.*;
 
 class Hash {
-    private boolean add;
     public static void main(String[] args){
         int[] number = {1,2,3,4,5,6};   
         solution(number);
