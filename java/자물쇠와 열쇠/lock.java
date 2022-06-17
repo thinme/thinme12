@@ -1,4 +1,3 @@
-import java.util.*;
 public class lock {
 
     public static void main(String[] args){
@@ -20,7 +19,6 @@ public class lock {
         System.out.println(DecimalToBinary(number));
         return Binary_number;
      
-        int[][] key=Binary_number;
-        int[][] lock=
+       
     }
 }
