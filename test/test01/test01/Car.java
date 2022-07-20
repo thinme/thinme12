@@ -1,10 +1,20 @@
-package test;
+package test01;
 
-public class Car {
-    public string myCar.company ="hyndai";
-    public string myCar.model ="sonata";
-    public string myCar.color ="red";
-    public int  myCar.maxSpeed =300;
-    public int myCar.speed;
+public abstract class  Car {
+    
+    public  String company;
+    public  int speed;
+    public  String color;
+    
+   
+
+    public void run(){
+        
+    }
+
+    public void language() {
+    }
+
+    
     
 }
